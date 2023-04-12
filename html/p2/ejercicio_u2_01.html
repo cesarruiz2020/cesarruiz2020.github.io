@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+    Nombre:Cesar Isaac Ruiz Soriano 
+    Materia:Programacion web I
+    Fecha:02/03/2023
+    Descripcion:ejercicio 1 unidad 2
+-->
+<html>
+    <head>
+        <title>Unidad 02- ejercicio 1</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Cesar Isaac Ruiz Soriano">
+        <meta name="revised" content="jueves, 02 de marzo 2023">
+        <meta name="description" content="table,border,tr,td,thead,tbody,tfoot,colspan,rowspan">
+    </head>
+    <body>
+        <h1>tablas</h1>
+        <h2>Combinar renglones y columnas</h2>
+        <table>
+            <tr>
+                <th>No.</th>
+                <th>Nombre</th>
+                <th>Apellido<br>paterno</th> 
+                <th>Apellido materno</th>           
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Juan</td>
+                <td></td>  
+                <td>Pérez</td>          
+            </tr>     
+            <tr>
+                <td>2</td>
+                <td>pedro</td>
+                <td colspan="2">López</td>            
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Tómas</td>
+                <td>López</td>    
+                <td>Pérez</td>        
+            </tr>
+
+
+
+
+            <h3>Ejercicio no 2</h3>
+            <table border="6">
+                <tr><th colspan="4">Tabla No. 2</th></tr>
+                <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+                <tr><td rowspan="3">5</td><td>6</td><td colspan="2">7</td></tr>               
+                <tr><td>8</td><td>9</td><td rowspan="2">10</td></tr>
+                <tr><td colspan="2">11</td></tr>
+            </table>
+
+                <table border="6">
+                <tr><th colspan="4">Tabla No. 3</th></tr>
+                <tr><th></th><th>comida</th><th>hotel</th><th>transporte</th></tr>
+                <tr><th colspan="4">Vallarta</th></tr>               
+                <tr><td>01/jul/2022</td><td>15</td><td>120</td><td>-</td></tr>
+                <tr><td>02/jul/2022</td><td>18</td><td>120</td><td>34</td></tr>
+                <tr><td>03/jul/2022</td><td>25</td><td>120</td><td>-</td></tr>
+                <tr><th colspan="4">Nuevo Vallarta</th></tr>  
+                <tr><td>04/jul/2022</td><td>10</td><td>75</td><td>12</td></tr>
+                <tr><td>05/jul/2022</td><td>12</td><td>75</td><td>14</td></tr>
+                <tr><td>02/jul/2022</td><td>18</td><td>120</td><td>34</td></tr>
+                <tr><th>TOTAL</th><th>80</th><th>510</th><th>60</th></tr>
+            </table>   
+            <table border="3">
+                <thead><!--no importa el orden, siempre se acomodara con estas etiquetas(thead,tbody,tfoot)-->
+                    <tr><th colspan="4">Tabla No.3 (con thead,tbody,tfoot)</th></tr>
+                    <tr><th></th><th>comida</th><th>hotel</th><th>transporte</th></tr>
+                </thead>
+                <tbody>
+                    <tr><th colspan="4">Vallarta</th></tr>               
+                    <tr><td>01/jul/2022</td><td>15</td><td>120</td><td>-</td></tr>
+                    <tr><td>02/jul/2022</td><td>18</td><td>120</td><td>34</td></tr>
+                    <tr><td>03/jul/2022</td><td>25</td><td>120</td><td>-</td></tr>
+                    <tr><th colspan="4">Nuevo Vallarta</th></tr>  
+                    <tr><td>04/jul/2022</td><td>10</td><td>75</td><td>12</td></tr>
+                    <tr><td>05/jul/2022</td><td>12</td><td>75</td><td>14</td></tr>
+                    <tr><td>02/jul/2022</td><td>18</td><td>120</td><td>34</td></tr>
+                </tbody>
+                <tfoot>
+                    <tr><th>TOTAL</th><th>$80</th><th>$510</th><th>60</th></tr>
+                </tfoot>
+            </table>                     
+    </body>
+</html>
