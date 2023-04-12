@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+    Nombre:Cesar Isaac Ruiz Soriano 
+    Materia:Programacion web I
+    Fecha:1/03/2023
+    Descripcion:ejercicio 5 - unidad 2
+-->
+<html>
+    <head>
+        <title>Unidad 2- ejercicio 5</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Cesar Isaac Ruiz Soriano">
+        <meta name="revised" content="22/03/2023">
+        <meta name="description" content="(etiquetas revisadas)">
+        <style type="text/css">
+    </head>
+<body>
+    <h1>JavaScript - Ejercicio 1378</h1>
+
+    <input type="button" onclick="crearTabla()" value="Crear tabla">
+
+    <br>
+
+    <table id="tblDatos" border="1"></table>
+
+
+    <script>
+        function crearTabla() {
+            let filas = parseInt(prompt('Digite el número de filas para la tabla:'));
+            let columnas = parseInt(prompt('Digite el número de columnas para la tabla:'));
+
+            for (let i = 0; i < filas; i++) {
+                let filaActual = document.getElementById('tblDatos').insertRow(i);
+                
+                for (let j = 0; j < columnas; j++) {
+                    let celda = filaActual.insertCell(j);
+
+                    celda.innerHTML = `Fila: ${i} - Columna: ${j}`;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

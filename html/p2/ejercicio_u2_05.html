@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!--
+    Nombre: Cesar Isaac Ruiz Soriano"
+    Materia: Programación Web 1
+    Fecha:30/3/2023
+    Descripción:Estilos CSS
+-->
+<html lang="es">
+    <head>
+        <title>Plantilla</title>
+        <meta charset="uft-8">
+        <meta name="author"content="Cesar Isaac Ruiz Soriano">
+        <meta name="revised" content=" ">
+        <meta name="description" content="Estilos de etiquetas y encabezados(style)">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Mr+Dafoe&display=swap" rel="stylesheet">
+        <style>
+            p {
+                background-color: black;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                margin-left: 0px;
+                margin-right: 0px;
+                text-align: center;
+                text-transform: uppercase;
+                text-indent: 50px;
+                line-height: 3;
+            }
+            #parrafoEspecial {
+                background-color: darkcyan;
+                text-align: justify;
+                font-family: 'Mr Dafoe', cursive;
+
+
+            }
+            #miCuadro{
+                border: 5px;
+            }
+            #miCuadro th, #miCuadro td{
+                border: 1px dotted grey;
+            }
+            .alterno{
+                background-color: gray;
+            }
+            h1:hover, h2:hover, h3:hover{
+                color: rgb(0, 0, 0);
+                background-color: darkslategray;
+                text-transform: uppercase;
+                text-shadow: #3CC62E 5px 5px 3px;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 150%;
+            }
+            th:hover, td:hover{
+                background-color: lightgreen;
+                color:black;
+            }
+            #miCuadro th:hover, #miCuadro td:hover{
+                background-color: lightblue;
+                color:black;
+                font-size: 25px;
+            }
+        </style>
+    </head>
+    <body style="color: gold">
+        <hgroup style="color: darkgreen">
+            <h1>CSS</h1>
+            <h2>Estilo en línea</h2>
+            <ul style="color: magenta;" style="text-decoration: none;">
+                <li style="color: red;"><a href="#" style="text-decoration: overline;">Inicio</a></li>
+                <li style="color: blue;"><a href="#" style="text-decoration: none;">Alumnos</a></li>
+                <li style="color: yellow;"><a href="#" style="text-decoration: line-through;">Aspirantes</a></li>
+                <li style="color: green;"><a href="#" style="text-decoration: underline line-through overline">Docentes</a></li>
+                <li style="color: cyan;"><a href="#" style="text-decoration: underline;">Administrativos</a></li>
+        </hgroup>
+        <hgruop>
+            <h2>Estilo en Encabezado</h2>
+            <p id="parrafoEspecial" style="background-color: darkblue; color: white; text-decoration: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus eros et velit fringilla pellentesque. Fusce nisl ligula, malesuada vel libero in, lacinia finibus augue. Fusce vel porttitor lectus. Morbi venenatis massa rhoncus diam iaculis dignissim. Morbi ipsum neque, elementum eget lorem sit amet, mattis lobortis tortor. Fusce at mi varius, scelerisque est sed, tempor nunc. Mauris consectetur lorem placerat tristique ullamcorper. Praesent turpis lectus, molestie sit amet volutpat et, consequat eu orci. Nunc lacinia metus tortor. Nullam lorem ligula, sagittis sagittis erat nec, blandit luctus nunc. Duis eget elementum felis, quis dignissim orci. Donec mollis nisl eget ante imperdiet porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p style="text-decoration: overline;">Nam sollicitudin ante non eros consequat consectetur. Quisque at aliquet metus. Nulla eget nibh metus. Sed eget nisi commodo, sagittis sapien ac, aliquam nisi. Phasellus ullamcorper, velit sed pellentesque lacinia, mauris erat sagittis eros, non mattis leo ante a metus. Aliquam sed tellus luctus, lobortis erat ac, euismod odio. In lobortis a magna sit amet pulvinar. Duis sit amet dapibus eros, ac tempor magna. Etiam et vulputate mauris, sed tincidunt metus. Cras ut maximus purus, sit amet euismod neque. Sed maximus neque neque, ut lobortis purus efficitur eget. Aenean tristique rutrum mauris, eget sodales mauris venenatis a. Aenean blandit porta felis id interdum. Sed iaculis finibus imperdiet. Quisque egestas dui tortor.</p>
+            <p style="text-decoration: line-through;">Vivamus ultrices orci massa, eu aliquet ligula sodales sit amet. Nullam elit quam, tempus ut arcu a, dapibus finibus diam. Fusce laoreet auctor eros, in commodo tortor ornare quis. Sed pellentesque sem ac ipsum rhoncus egestas. Donec sagittis ante ut ante ullamcorper suscipit. Maecenas consectetur scelerisque auctor. Cras commodo velit nec luctus congue.</p>
+            <p style="text-decoration: underline;">Proin gravida diam odio, et auctor velit tristique eget. Proin eu laoreet metus. Proin consectetur dolor et erat cursus, at vehicula magna porta. Praesent eleifend ipsum id vulputate ornare. Cras massa urna, cursus nec interdum quis, aliquet a justo. Mauris pulvinar sem vel dolor pellentesque varius in sed dui. Praesent lacus nisi, malesuada quis erat ac, rhoncus auctor dui. Phasellus fermentum, mi non tempus faucibus, felis mauris sollicitudin neque, pellentesque ultrices velit augue sed urna.</p>
+        </hgruop>
+        <hgroup>
+            <h2>Estilo con selectores</h2>
+            <table border="3">
+                <tr>
+                    <tr><th>&nbsp</th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th></tr>
+                    <tr><td>1</td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td>2</td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td>3</td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td>4</td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td>5</td><td></td><td></td><td></td><td></td><td></td></tr>
+                </tr>
+            </table>
+        </hgroup>
+        <hgroup>
+            <table id="miCuadro">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                    <th>D</th>
+                    <th>E</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="alterno"><td>1</td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td>2</td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr class="alterno"><td>3</td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td>4</td><td></td> <td></td><td></td><td></td><td></td></tr>
+                  <tr class="alterno"><td>5</td><td></td><td></td><td></td><td></td><td></td></tr>
+                </tbody>
+                </table>
+        </hgroup>
+        <hgroup>
+            <h2>Cuadro de Colores</h2>
+            <table style="color:rgb(0, 0, 0); font-family: 'Delicious Handrawn', cursive;" border="3 font-size 150%" >
+                <thead>
+                    <tr>
+                        <th colspan="4">Cuadro Colores</th>
+                    </tr>
+                  <tr>
+                    <td style="background-color: rgb(255,0,0);">0º rgb(255,0,0)</td>
+                    <td style="background-color: rgb(255,64,0)">15º rgb(255,64,0)</td>
+                    <td style="background-color: rgb(255,128,0);">30º rgb(255,128,0)</td>
+                    <td style="background-color: rgb(255,191,0)">45º rgb(255,191,0)</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="background-color: rgb(255,255,0)">60º rgb(255,255,0)</td>
+                    <td style="background-color: rgb(191,255,0)">75º rgb(191,255,0)</td>
+                    <td style="background-color: rgb(128,255,0)">90º rgb(128,255,0)</td>
+                    <td style="background-color: rgb(64,255,0)">105º rgb(64,255,0)</td>
+                  </tr>
+                  <tr>
+                    <td style="background-color: rgb(0,255,0)">120º rgb(0,255,0)</td>
+                    <td style="background-color: rgb(0,255,64)">135º rgb(0,255,64)</td>
+                    <td style="background-color: rgb(0,255,128)">150º rgb(0,255,128)</td>
+                    <td style="background-color: rgb(0,255,191);"d>165º rgb(0,255,191)</td>
+                  </tr>
+                  <tr>
+                    <td style="background-color: rgb(0,255,255)">180º rgb(0,255,255)</td>
+                    <td style="background-color: rgb(0,191,255)">195º rgb(0,191,255)</td>
+                    <td style="background-color: rgb(0,128,255)">210º rgb(0,128,255)</td>
+                    <td style="background-color: rgb(0,64,255)">225º rgb(0,64,255)</td>
+                  </tr>
+                  <tr>
+                    <td style="background-color: rgb(0,0,255)">240º rgb(0,0,255)</td>
+                    <td style="background-color: rgb(64,0,255)">255º rgb(64,0,255)</td>
+                    <td style="background-color: rgb(128,0,255)">270º rgb(128,0,255)</td>
+                    <td style="background-color: rgb(191,0,255)">285º rgb(191,0,255)</td>
+                  </tr>
+                  <tr>
+                    <td style="background-color: rgb(255,0,255)">300º rgb(255,0,255)</td>
+                    <td style="background-color: rgb(255,0,191)">315º rgb(255,0,191)</td>
+                    <td style="background-color: rgb(255,0,128)">330º rgb(255,0,128)</td>
+                    <td style="background-color: rgb(255,0,64)">345º rgb(255,0,64)</td>
+                  </tr>
+                </tbody>
+                </table>
+           
+        </hgroup>
+    </body>
+</html>
