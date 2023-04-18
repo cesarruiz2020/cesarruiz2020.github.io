@@ -1,0 +1,93 @@
+p {
+    background-color: black;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    text-indent: 50px;
+    line-height: 3;
+}
+#listaU{color: magenta}
+#item1{color: red}
+#item2{color: blue}
+#item3{color: yellow}
+#item4{color: green}
+.link1{text-decoration: overline;}
+.link2{text-decoration: none;}
+.link3{text-decoration: line-through;}
+.link4{text-decoration: underline line-through;}
+.link5{text-decoration: underline;}
+#parrafoEspecial{
+    background-color: darkcyan;
+    text-align: justify;
+    font-family: 'Mr Dafoe', cursive;
+    color:white
+}
+#miCuadro{
+    border: 5px;
+}
+#miCuadro th, #miCuadro td{
+    border: 1px dotted grey;
+}
+.alterno{
+    background-color: gray;
+}
+h1:hover, h2:hover, h3:hover{
+    color: rgb(0, 0, 0);
+    background-color: darkslategray;
+    text-transform: uppercase;
+    text-shadow: #3CC62E 5px 5px 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 150%;
+}
+th:hover, td:hover{
+    background-color: lightgreen;
+    color:black;
+}
+#miCuadro th:hover, #miCuadro td:hover{
+    background-color: lightblue;
+    color:black;
+    font-size: 25px;
+}
+body{
+    color: goldenrod;
+}
+hgroup{
+    color:goldenrod;
+}
+.especial{
+    color:darkgreen
+}
+.tablaColores th:hover, td:hover {color:rgb(0, 0, 0); font-family: 'Delicious Handrawn', cursive; border:3; font-size: 25px;}
+.color1-1{background-color: rgb(255,0,0);}
+.color1-2{background-color: rgb(255,64,0);}
+.color1-3{background-color: rgb(255,128,0);}
+.color1-4{background-color: rgb(255,191,0);}
+.color2-1{background-color: rgb(255,255,0);}
+.color2-2{background-color: rgb(191,255,0);}
+.color2-3{background-color: rgb(128,255,0);}
+.color2-4{background-color: rgb(64,255,0);}
+.color3-1{background-color: rgb(0,255,0);}
+.color3-2{background-color: rgb(0,255,64);}
+.color3-3{background-color: rgb(0,255,128);}
+.color3-4{background-color: rgb(0,255,191);}
+.color4-1{background-color: rgb(0,255,255);}
+.color4-2{background-color: rgb(0,191,255);}
+.color4-3{background-color: rgb(0,128,255);}
+.color4-4{background-color: rgb(0,64,255);}
+.color5-1{background-color: rgb(0,0,255);}
+.color5-2{background-color: rgb(64,0,255);}
+.color5-3{background-color: rgb(128,0,255);}
+.color5-4{background-color: rgb(191,0,255);}
+.color6-1{background-color: rgb(255,0,255);}
+.color6-2{background-color: rgb(255,0,191);}
+.color6-3{background-color: rgb(255,0,128);}
+.color6-4{background-color: rgb(255,0,64);}
+
+.dinamico li:first-child{background-color: black; color: limegreen}
+.dinamico li:nth-child(even){background-color: crimson; color: white}
+.dinamico li:last-child{background-color: limegreen; color: black }
+#miTabla tr:nth-child(even){background-color: pink; color:black}
+#miTabla tr:nth-child(odd){background-color: lightgreen; color:black}
