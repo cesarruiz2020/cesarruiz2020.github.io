@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+    Nombre:Cesar Isaac Ruiz Soriano 
+    Materia:Programacion web I
+    Fecha:08/03/2023
+    Descripcion:ejercicio 6- unidad 3
+-->
+<html>
+    <head>
+        <title>Unidad - ejercicio -</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Cesar Isaac Ruiz Soriano">
+        <meta name="revised" content="(08/03/2023)">
+        <meta name="description" content="(etiquetas revisadas)">
+        <style> .tit {background-color: black; color: aqua;}</style>
+    </head>
+    <body>                   
+        <h1 class="tit">JavaScript - condicionales</h1>
+            <script>
+                /*4.1.1.11 Tareas: Condicionales */
+
+                let varNum =prompt("intrduce el valor para jugar...");
+                varNum=varNum ? varNum : "0";
+
+                /*tarea No. 1*/
+
+                if (varNum>90 && varNum<110){
+                    alert("bingo!");
+                }
+                    else{
+                        alert("fallaste!");
+                    }
+                    
+                /*tarea No. 2*/
+
+                let varResult = (varNum>90 && varNum<110) ? "¡Loteria! :)" : "¡perdiste! :("
+                alert (varResult);
+
+                varResult = (varNum>90) ? ((varNum<110) ? "Correcto!!!" : "el valor debe ser menor!!!") : "El valor debe ser mayor!!!";
+                alert(varResult);
+            </script>
+    </body>
+</html>
