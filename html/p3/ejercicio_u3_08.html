@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--
+    Nombre: Cesar Isaac Ruiz Soriano
+    Materia: Programación Web 1
+    Fecha: 08/05/2023
+    Descripción: Tareas Módulo No. 4
+-->
+<html lang="es">
+    <head>
+        <title>Unidad 03 - Ejercicio 05</title>
+        <meta charset="uft-8">
+        <meta name="author"content="Cesar Isaac Ruiz Soriano">
+        <meta name="revised" content="Lunes 08 de mayo 2023">
+        <meta name="description" content="if, else, switch">
+        <style>
+            .Tit {background-color: black; color: aqua;}
+        </style>
+    </head>
+    <h1 class="Tit">JavaScript - Condicionales</h1>
+    <script>
+    </script>
+    <body>
+        <h2>Formularios con JavaScript</h2>
+        <label>Nombre:</label>
+        <input type="text" placeholder="(Nombre)" id="varNombre">
+        <input type="button" value="Accion" onclick="let varMensaje='Hola Juan, como estas??';
+            document.getElementById('varResultado').value=varMensaje;">
+        <br>
+        <label>Resultado:</label>
+        <input type="text" placeholder="(Resultado)" id="varResultado" readonly>
+        <h2>Tabla de Superficie y Volumenes</h2>
+        <table border="3px">
+            <thead>
+              <tr>
+                <th>FIGURA</th>
+                <th>DATOS</th>
+                <th>RESULTADO</th>
+                <tr>
+                  <th>Cuadrado</th>
+                  <td rowspan="2">Lado: <input type="number" id="varLado"></td>
+                  <td>
+                    Area: 
+                    <input type="number" id="varAreaCuadrado" readonly>
+                    <input type="button" value="Calcular"
+                      onclick="document.getElementById('varAreaCuadrado').value = 
+                      document.getElementById('varLado').value**2;
+                      document.getElementById('varVolumneCubo').value =
+                      document.getElementById('varLado'). value ** 3;">
+
+                  </td>
+                </tr>
+                <tr>
+                    <td>Cuadro</td>
+                    <td rowspan="2">Arista: <input type="number" id="varArista"></td>
+                    <td>Area: </td>
+                </tr>
+                <td>Cubo</td>
+                <td>Volumen: </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="2">Rectangulo</td>
+                <td>Base: <input type="number" id= varBase></td>
+                <td rowspan="2">
+                    Área <input type="number" id="varAreaRectangulo" readonly>
+                    <input type="button" value="Calcular"
+                        onclick="document.getElementById('varAreaRectangulo').value =
+                        document.getElementById('varBase').value * document.getElementById('varAltura').value;">
+                </td>
+              </tr>
+              <tr>
+                <td>Altura: <input type="number" id= varAltura></td>
+              </tr>
+              <tr>
+                <td rowspan="2">Prisma</td>
+                <td rowspan="2">Profundidad:<input type="number" id="varProfundidad"> </td>
+                <td rowspan="2">
+                    Volumen: <input type="number" id="varVolumen" readonly>
+                    <input type="button" value="Calcular"
+                    onclick="document.getElementById('varAreaRectangulo').value =
+                    document.getElementById('varBase').value * document.getElementById('varAltura').value *
+                    document.getElementById('varAreaRectangulo').value;">
+                </td>
+              </tr>
+            </tbody>
+            </table>
+            <h2>GeoLocalización</h2>
+            <button onclick="getlocation()">Obtener Coordenadas</button>
+            <p id="data"></p>
+            <p id="map"></p>
+            <script>
+              function getlocation(){
+                if(navigator.geolocation) { navigator.geolocation.getCurrentPosition(showPosition); }
+                else {alert("Geolocalizacion no soportada por el navegador..."); }
+              }
+              function showPosition(position){
+                document.getElementById("data").innerHTML += "Latitud: " + position.coords.latitude;
+                document.getElementById("data").innerHTML += "<br>Longitud: " + position.coords.longitude;
+                var latlon = position.coords.latitude + "," + position.coords.longitude;
+                latlon = '22.12294937628755, -100.98415702818387';
+                var img_url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latlon +
+                "&zoom=14&size=400x300&sensor=false&key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg";
+                document.getElementById("map").innerHTML = "<img src='" + img_url + "'>";
+              }
+            </script>
+    </body>
+</html>

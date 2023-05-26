@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+    Nombre: Cesar Isaac Ruiz Soriano
+    Materia: Programación Web 1
+    Fecha: 08/05/2023
+    Descripción: Tareas Módulo No. 4
+-->
+<html lang="es">
+    <head>
+        <title>Unidad 03 - Ejercicio 05</title>
+        <meta charset="uft-8">
+        <meta name="author"content="Cesar Isaac Ruiz Soriano">
+        <meta name="revised" content="Lunes 08 de mayo 2023">
+        <meta name="description" content="if, else, switch">
+        <style>
+            .Tit {background-color: black; color: aqua;}
+        </style>
+    </head>
+    <h1 class="Tit">JavaScript - Condicionales</h1>
+    <script>
+        //Tarea No. 6//
+        let varNum1, varNum2, varOp, varRes, varOpcion;
+        let varHistorial = "-----Historial de Operaciones------";
+
+        do{
+            varNum1 = Number(prompt("Valor del primer operando: "));
+            varNum2 = Number(prompt("Valor del segundo operando: "));
+            varOp = prompt("Operacion a realizar (+, -, *, /):  ");
+            varRes = "";
+
+            if(Number.isNaN(varNum1) || Number.isNaN(varNum2)) {
+                varRes = "Los operadores deben ser Numeros";
+            }else{
+                switch(varOp){
+                    case '+': varRes = "El resultado de (" + varNum1 +  " + " + varNum2 + ") es: " + (varNum1 + varNum2); break;
+                    case '-': varRes = "El resultado de (" + varNum1 +  " - " + varNum2 + ") es: " + (varNum1 - varNum2); break;
+                    case '*': varRes = "El resultado de (" + varNum1 +  " * " + varNum2 + ") es: " + (varNum1 * varNum2); break;
+                    case '/': varRes = "El resultado de (" + varNum1 +  " / " + varNum2 + ") es: " + (varNum1 / varNum2); break;
+                    default: varRes = "Operacion incorrecta ("+ varOp + ")..";
+                }
+            }
+            alert(varRes);
+
+            varHistorial += "\n" + varRes;
+
+            varOpcion = confirm("¿Deseas realizar otra operacion?");
+        }while(varOpcion);
+
+        alert(varHistorial);
+    </script>
+    <body>
+    </body>
+</html>
