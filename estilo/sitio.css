@@ -29,3 +29,9 @@ footer {
   }
   .row.content {height:auto;}
 }
+
+.contenedor {
+  position: absolute;
+  top: 50px; /* Posición desde la parte superior de la ventana */
+  right: 50px; /* Posición desde el lado izquierdo de la ventana */
+}
