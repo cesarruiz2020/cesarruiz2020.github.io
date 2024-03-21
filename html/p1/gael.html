@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        .birthday-image {
+            width: 400px;
+            height: auto;
+            margin: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        .birthday-image:hover {
+            transform: scale(1.1);
+        }
+        .message {
+            font-size: 36px;
+            color: #ff0000;
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+      <script>
+        var musica = document.getElementById('musica');
+
+        // Reproducir música al cargar la página
+        window.onload = function() {
+            // Verifica si el navegador permite la reproducción automática
+            if (musica.paused) {
+                musica.play();
+            }
+        };
+
+        function mostrarMensaje() {
+            var mensaje = document.getElementById('mensaje');
+            mensaje.style.display = 'block';
+        }
+    </script>
+    <h1>¡Feliz pumpe tetonaaa!</h1>
+    <audio id="musica" autoplay loop>
+        <source src="mananitas.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+    <img class="birthday-image" src="pumpe.jpg" alt="Feliz Cumpleaños" onclick="mostrarMensaje()">
+    <p class="message" id="mensaje">¡Que tengas bonito dia padre!</p>
+
+    
+</body>
+</html>
